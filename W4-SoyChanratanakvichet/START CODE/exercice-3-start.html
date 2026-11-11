@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.container {
+    display: flexbox;
+    width:auto;
+    flex-direction: column;
+    height: auto;
+    padding:2em;
+    
+}
+header {
+    height: 10vh;
+    background: #1e90ff;
+    border-radius: 0.5em;
+    box-shadow:#0077ea;
+}
+main {
+    background:#3cb371;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: #2f8d59;
+    flex-grow: 1;
+    padding: 1em;
+    gap: 1em;
+}
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#Sidebar {
+    background:#ff6347;
+    border-radius: 0.5em;
+    box-shadow: #e02200;
+    justify-content: flex-end;
+    width:30%;
+    padding: 1em;
+}
+footer {
+    height: 10vh;
+    background:#4169e1;
+    border-radius: 0.5em;
+    box-shadow: #1d44b8;
+    flex-direction: flex-end;
+}
+.item {
+    padding: 1em;
+    width: 13em;
+    height: 10em;
+    gap: 1em;
+    border-radius: 0.5em;
+    box-shadow: #226741;
+    background:#2f8d59;
+    
+}
+.divitem {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-left:4%;
+    padding-right:4%;
+    padding-bottom: 1.5em;
+}
+
+
+</style>
+
+
+
+
+<body>
+    <div >
+    <header class="container">Header</header>
+    <div class="content">
+      <main class="Content">Main
+        <div class="divitem">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        </div>
+      </main>
+      <div class="Content" id="Sidebar">Sidebar</div>
+      </div>
+      <footer class="container">Footer</footer>
+
+    </div>
+</body>
+</html>
